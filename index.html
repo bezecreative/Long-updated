@@ -118,7 +118,7 @@ h1,h2,h3{
 .hero h1{
   color:#fff;text-transform:uppercase;
   font-size:min(128px,13.5vw);font-weight:900;
-  line-height:normal;margin:.04em 0 .18em;margin-left:-0.067em;
+  line-height:normal;margin:.04em 0 -.1em;margin-left:-0.067em;
 }
 .hero .eyebrow{
   font-family:var(--sans);font-weight:700;text-transform:capitalize;
@@ -169,9 +169,9 @@ h1,h2,h3{
   font-size:48px;font-weight:900;font-style:normal;line-height:normal;text-transform:uppercase;margin-bottom:28px;
 }
 .reg-copy h2 .accent{color:var(--blue);}
-.pill-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:520px;}
+.pill-grid{display:flex;flex-wrap:wrap;gap:16px;max-width:560px;}
 .pill{
-  background:var(--white);border-radius:16px;padding:16px 20px;
+  flex:0 0 auto;background:var(--white);border-radius:16px;padding:16px 22px;padding-right:34px;
   box-shadow:0 1px 0 rgba(0,0,0,.04);border:1px solid #ededed;
 }
 .pill .k{
@@ -322,7 +322,6 @@ h1,h2,h3{
 @media (max-width:620px){
   .feat-grid{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
-  .pill-grid{grid-template-columns:1fr;max-width:none;}
   .stats .row{grid-template-columns:1fr;}
   .stat::before{display:none!important;}
   .stat{padding:0;}
@@ -424,7 +423,7 @@ h1,h2,h3{
     </div>
     <!-- Copy + info pills -->
     <div class="reg-copy reveal">
-      <h2>Boise's Only <span class="accent">Building Technology Expo</span></h2>
+      <h2>Boise's Only <span class="accent">Building<br>Technology Expo</span></h2>
       <div class="pill-grid">
         <div class="pill"><p class="k">Dates</p><p class="v">August 25–26</p></div>
         <div class="pill"><p class="k">Times</p><p class="v">9:00 AM – 5:00 PM</p></div>
