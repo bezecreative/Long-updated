@@ -182,8 +182,8 @@ h1,h2,h3{
 .pill .v.green{color:#509E2F;}
 
 /* Register 2 benefits */
-.benefits h2{font-size:clamp(38px,4.3vw,64px);line-height:1;margin-bottom:26px;}
-.benefits h2 .accent{color:var(--blue);}
+.benefits h2{font-size:48px;font-style:normal;font-weight:900;line-height:normal;text-transform:uppercase;margin-bottom:26px;}
+.benefits h2 .accent{color:var(--blue);display:block;}
 .benefits ul{margin:0;padding-left:1.1em;list-style:disc;}
 .benefits li{
   padding:2px 0;font-family:var(--sans);font-weight:400;font-style:normal;
@@ -253,6 +253,7 @@ h1,h2,h3{
 .stat:not(:first-child)::before{
   content:"";position:absolute;left:0;top:6px;bottom:18px;width:2px;background:var(--divider);opacity:.5;
 }
+.stat:first-child{padding-left:0;}
 .stat .n{font-family:var(--display);font-weight:900;font-style:normal;font-size:64px;line-height:normal;text-transform:capitalize;margin-bottom:16px;color:#fff;}
 .stat p{font-family:var(--sans);font-weight:400;font-style:normal;font-size:24px;color:#fff;margin:0;line-height:normal;}
 
@@ -315,6 +316,7 @@ h1,h2,h3{
   .card-grid{grid-template-columns:1fr;}
   .stats .row{grid-template-columns:1fr 1fr;gap:34px 0;}
   .stat:nth-child(3)::before{display:none;}
+  .stat:nth-child(odd){padding-left:0;}
   .stat{padding:0 clamp(14px,3vw,22px);}
 }
 @media (max-width:620px){
